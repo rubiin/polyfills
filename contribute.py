@@ -75,7 +75,7 @@ def contributions_per_day(args):
         max_c = 20
     if max_c < 1:
         max_c = 1
-    return randint(1, max_c)
+    return randint(20, max_c)
 
 
 def arguments(argsval):
