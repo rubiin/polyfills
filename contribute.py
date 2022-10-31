@@ -54,7 +54,7 @@ def main(def_args=sys.argv[1:]):
 
 
 def contribute(date):
-    with open(os.path.join(os.getcwd(), 'README.md'), 'a') as file:
+    with open(os.path.join(os.getcwd(), 'foo.txt'), 'a') as file:
         file.write(message(date) + '\n\n')
     run(['git', 'add', '.'])
     run(['git', 'commit', '-m', '"%s"' % message(date),
